@@ -46,7 +46,7 @@ class Login extends StatelessWidget {
                   absorbing: state is Loading,
                   child: Column(children: [
 
-                    MDarkLightSwitch(),
+
 
                     Row(
                       children: [
