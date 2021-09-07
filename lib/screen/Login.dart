@@ -50,17 +50,20 @@ class Login extends StatelessWidget {
 
                     Row(
                       children: [
-                       MSwitch(
-                           value: _remember,
-                           hint: 'Remember me',
-                            onChanged: (val) => _remember = val),
+                        MSwitch(value: _remember, hint: 'remember me!' , onChanged:(val)=> _remember = val),
+                        'Remember me'.toLabel(),
                       ],
                     ),
-                    'Remember me'.toLabel(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.start
+                      ,
+                      children: [MDarkLightSwitch()],),
+
                     Row (
                         mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [MTextButton(title: 'register', onPressed: () {})]),
+                        children: [ MTextButton(title: 'register', onPressed: () {})]),
                     Row(mainAxisSize: MainAxisSize.min, children: [
                       MButton(
                           title: 'Login',

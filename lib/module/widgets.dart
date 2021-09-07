@@ -180,7 +180,7 @@ class MSwitch extends StatelessWidget {
         stream: _value.stream,
       builder: (_, snap){
         if(snap.hasData)
-           this.hint !=null?
+         return  this.hint !=null?
               Tooltip(
                   message: this.hint!,
                 child: Switch(
